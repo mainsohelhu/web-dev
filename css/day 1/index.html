@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--inline css-->
+    <h1 style="color: white; background-color: slateblue;">NESTED TABLE</h1>
+    <table border="2" style="border-collapse: collapse; background-color: gold;" >
+        <tr style="background-color: yellow;">
+            <th>header 1</th>
+            <th>header 2</th>
+            <th>header 3</th>
+            <th>header 4</th>
+        </tr>
+        <tr style="background-color: aqua; color: white;">
+            <th>row 2 item 1</th>
+            <th>row 2 item 2</th>
+            <th>row 2 item 3</th>
+            <th>row 2 item 4</th>
+        </tr>
+        <tr style="background-color: red;">
+            <th style="background-color: pink;">row 3 table 2
+                <table border="" style="border-collapse: collapse; background-color: yellow; border-color: red;" >
+                <tr>
+                    <td>row header 1</td>
+                    <td style="background-color: black; color: white;">item 1</td>
+                </tr>
+                <tr>
+                    <td>row header 2</td>
+                    <td style="background-color: black; color: white;">item 2</td>
+                </tr>
+                </table>
+            </th>
+            <th>row 3 item- 2</th>
+            <th style="background-color: cornsilk;">
+                <table border="" style="border-collapse: collapse; font-style: italic; border-color: blue;">
+                    <tr>
+                        <th>row 1 header</th>
+                        <td>item 1</td>
+                    </tr>
+                    <tr>
+                        <th>row 2 header</th>
+                        <td>item 2</td>
+                    </tr>
+                    <tr>
+                        <th>row 3 header</th>
+                        <td>item 3</td>
+                    </tr>
+                </table>
+            </th>
+            <th style="background-color: purple; color: white;">row 3 item 3</th>
+        </tr>
+        <tr style="font-style: italic; color: blue; background-color: tomato;">
+            <th>row 4 item 1</th>
+            <th>row 4 item 2</th>
+            <th>row 4 item 3</th>
+        </tr>
+        <tr style="background-color: blue; color: white;">
+            <th>row 5 last row of outer table</th>
+        </tr>
+    </table>
+</body>
+</html>

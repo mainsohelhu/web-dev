@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* chil celector */
+        div>p {
+            color: red;
+        }
+        /* adjacent sibling celector */
+        h1+p {
+            margin: 0;
+            color: yellow;
+        }
+
+        /* pseudo celector */
+        a:hover {
+            color: yellow;
+        }
+
+        /* pseudo element celector*/
+        p::first-line{
+            font-weight: bold;
+        }
+
+        /* combine celector */
+        div p.hilighted {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>child celector</h1> -->
+    <div>
+        <p>this paragraph will be red </p>
+        <div>
+            <p>this paragraph will not be red because its a grand child</p>
+        </div>
+    </div>
+    <!-- adjucent sibling celector -->
+    <h1>this is heading</h1>
+    <p>thsi paragraph will have no top margin</p>
+    <p>ths paragraph will not be affected</p>
+    <!-- pseudo class celector -->
+    <a href="#">hover me</a>
+    <!-- pseudo element celector -->
+    <p>this is a paragraph the first line will be bold <br>this is next line </p>
+    <!-- combine celector -->
+    <div>
+        <p class="hilighted">this paragraph will be hilighted</p>
+        <p>this paragraph will not be hilighted</p>
+    </div>
+</body>
+
+</html>

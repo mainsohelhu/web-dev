@@ -1,0 +1,28 @@
+.container {
+    height: 300px;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    margin: 5px;
+    padding: 20px;
+    border: solid;
+}
+.box1{
+    order: 3;
+    flex: 1 1 200px;
+    align-self: flex-start;
+    color: rgb(255,0,255)
+}
+.box2{
+    order: 1;
+    flex: 2 1 150px;
+    align-self:center;
+}
+.box3{
+    order: 2;
+    flex: 1 2 100px;
+    align-self: flex-end;
+}

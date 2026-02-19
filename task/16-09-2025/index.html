@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: solid;
+        }
+        .collapse{
+            border-collapse: collapse;
+        }
+        .yellow{
+            background-color: yellow;
+            border-collapse: collapse;
+        }
+        .pink{
+            background-color: palevioletred;
+        }
+        .purple{
+            background-color: purple;
+        }
+        .mahroon{
+            background-color:maroon;
+        }
+        .gry{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Table in Website</h1>
+    <h3>Caption-Nested Table</h3>
+    <table>
+        <tr>
+            <th>column1</th>
+            <th>colmun2</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>colspan</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>cell2</th>
+        </tr>
+        <tr>
+            <th>rowspan cell</th>
+            <th>
+                <table>
+                    <tr>
+                        <th>
+                            <table class="yellow collapse">
+                                <tr>
+                                    <th>
+                                        <table class="collapse">
+                                            <tr>
+                                                <th>inner colmun header1</th>
+                                                <th>inner colmun header 2</th>
+                                                <tr>
+                                                    <td class="gry">inner data cell 1</td>
+                                                    <td>
+                                                        <table class="collapse">
+                                                            <tr>
+                                                                <th>
+                                                                    <table class="collapse">
+                                                                        <tr>
+                                                                            <th>
+                                                                                <table class="pink">
+                                                                                    <tr>
+                                                                                        <td>inner most data cell 1</td>
+                                                                                        <td>inner most data cell 2</td>
+                                                                                        <tr>
+                                                                                            <td class="purple">inner most data cell 1</td>
+                                                                                            <td class="mahroon">inner most data cell 2</td>
+                                                                                        </tr>
+                                                                                    </tr>
+                                                                                </table>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </table>
+                                                                </th>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                            </table>
+                        </th>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+            

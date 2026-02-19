@@ -1,0 +1,35 @@
+/* p{
+    text-decoration: underline overline;
+    text-decoration-color: blue;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+} */
+.uppercase{
+    text-transform: uppercase;
+}
+.lovercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.indent{
+    text-indent: 3em;
+}
+h1{
+    letter-spacing: 0.3em;
+}
+.lihi{
+    font-size: 16px;
+    line-height: 1.80;
+}
+.normal{
+    word-spacing: normal;
+    text-shadow: ;
+}
+.wide{
+    word-spacing: 20px;
+}
+.tight{
+word-spacing: -5px;
+}

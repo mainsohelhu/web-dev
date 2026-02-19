@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">hello <span style="display: none;">hidden</span>world</p>
+    <p id="result"></p>
+    <p class="para">1st</p>
+    <p class="para">2nd</p>
+    <p class="para">3rd</p>
+    <p class="para">4th</p>
+    <p>6th</p>
+    <p>7th</p>
+    <p>8th</p>
+    <script>
+
+        let text = document.getElementById('demo').textContent
+        document.getElementById("result").innerText = text;
+        let cssElement = document.getElementById("demo")
+            cssElement.style.backgroundColor = "orange"
+            cssElement.style.color = "green"
+            cssElement.style.fontSize = "24px"
+            cssElement.style.fontWeight = "bold"
+            
+        
+        let exampleElement = document.getElementsByClassName("para")
+        for (let i = 0; i< exampleElement.length; i++) {
+          const element = exampleElement[i];
+          exampleElement[i].innerHTML = "5th"
+          exampleElement[i].style.backgroundColor = "red"
+          exampleElement[i].style.color = "blue"
+          exampleElement[i].style.fontSize = "24px"
+          exampleElement[i].style.fontWeight = "bold"
+           
+        }
+        exampleElement[0].innerHTML = "6th"
+
+        console.log(exampleElement[0]);
+        let example = document.getElementsByTagName("p")
+        for (i in example) {
+            example[i].innerHTML = 'hello everyone'
+            example[i].style.backgroundColor = "blue"
+          example[i].style.color = "white"
+          example[i].style.fontSize = "16px"
+          example[i].style.fontWeight = "bold"
+        }
+         
+    </script>
+</body>
+</html>

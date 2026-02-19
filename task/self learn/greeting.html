@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="hey">
+    <p id="greeting"></p>
+    <button onclick="greeting()" id="button">click</button>
+    <p class="some">hii</p>
+    <p class="some">hello</p>
+    <p id="demo">hello </p>
+    <h1>hii guys</h1>
+    <h1>hii guys</h1>
+    <p class="arr"></p>
+    <script>
+        let bclick = document.getElementById("button")
+        let handclick = () => {
+            alert("button is clicked")
+        }
+        bclick.addEventListener("click", handclick)
+        function greeting(name) {
+            name = document.getElementById("hey").value
+            if (name) {
+                document.getElementById("greeting").innerText = "Hii " + name + " welcome to this website";
+            } else {
+                document.getElementById("greeting").innerText = "please enter your name ";
+
+            }
+        }
+
+        let para = document.querySelectorAll(".some");
+        para.forEach(element => {
+            element.style.cssText = `
+background-Color : yellow;
+padding: 5px;
+border : 2px solid ;
+`
+            element.innerText = "kaisa hai be "
+        })
+        let delement = document.getElementById("demo");
+        delement.style.cssText = `
+ color : red;
+ border : 1px solid ;
+ padding : 5px;
+ `
+        let pel = document.getElementsByTagName('p')
+        for (i = 0; i < pel.length; i++) {
+            pel[1].style.color = "blue";
+
+        }
+        let over = () =>{
+            para.forEach(element =>{
+                element.style.color = "pink";
+            });
+        };
+        para.forEach(element =>{
+            element.addEventListener("mouseover",over)
+
+        });
+        let h = document.querySelectorAll("h1")
+        let o = () =>{
+            h.forEach(element =>{
+                element.style.color = "red";
+            })
+        }
+        h.forEach(element => {
+          element.addEventListener("mouseover", o)  
+        });
+        let paraForArr = document.querySelector(".arr")
+        paraForArr.style.cssText = `
+        border: 1px solid;
+        width : 50%;
+        margin : 0 auto;
+        height : 40vh;
+        display : flex;
+        justify-content : center;
+        align-items : center;
+        font-weigth : bold;
+        `
+        let arr = ['sohel','dovish','sekhar']
+        arr.push('nathan', "milli", "bobby")
+        for (const element of arr) {
+            paraForArr.innerText += element + "\n"
+        }
+
+    </script>
+</body>
+
+</html>

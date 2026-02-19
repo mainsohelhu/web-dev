@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            font-size: 8rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    
+    <script>
+        alert(" Only for you")
+        let name = prompt('Enter name')
+        document.getElementById('demo').innerText = "I love you ❤️" + name;
+        
+    </script>
+</body>
+</html>

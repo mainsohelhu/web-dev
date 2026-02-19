@@ -1,0 +1,88 @@
+#main {
+    width: 220px;
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    align-items: stretch;
+}
+
+#main div {
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+#flag{
+position: relative;
+}
+.flag {
+    width: 300px;
+    height: 220px;
+    /* border: solid; */
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+}
+.flag div{
+flex: 1;
+}
+.orange{
+    background-color: orange;
+}
+.white{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green{
+background-color: green;
+}
+.pole{
+    height: 500px;
+    width: 20px;
+    background-color: rgb(13, 109, 141);
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+#steps{
+    /* border: solid; */
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    right: 31px;
+}
+.stambh{
+    background-color: brown;
+    flex: 1;
+}
+.s1{
+width: 150px;
+margin: 0 auto;
+}
+.s2{
+    width: 200px;
+    margin: 0 auto;
+}
+.s3{
+    width: 250px;
+    margin: 0 auto;
+}
+#max{
+    /* border: solid; */
+    width: 550px;
+    max-width: 550px;
+    height: 700px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+
+}
+img{
+    width: 50px;
+}

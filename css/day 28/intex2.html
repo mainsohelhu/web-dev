@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            opacity: 0.1;
+        }
+        .img2{
+            opacity: 1.0;
+        }
+        .img3{
+            opacity: 0.5;
+        }
+        img:hover{
+            opacity: 1.00;
+
+        }
+        .linear{
+            background: linear-gradient(to left, yellow, red,green,blue,pink,black,aqua);
+            height: 100px;
+            width: 50vw;
+            color: white;
+
+        }
+        .radial{
+            background: radial-gradient(circle,orange,red,yellow,black);
+            height: 250px;
+            width: 250px;
+        }
+        .conic{
+            height: 250px;
+            width: 250px;
+            background: conic-gradient( red,yellow,green,pink,black,white);
+        }
+        .conic2{
+            background: conic-gradient(from 180deg, slateblue 90deg,white,aqua,pink,blue,black);
+            height: 250px;
+            width: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="https://store-images.s-microsoft.com/image/apps.59413.69545190943188987.bad7c420-51af-4579-8383-72696799c908.4c6a4319-7fad-41d0-af60-86a68930416a?q=90&w=480&h=270" alt="">
+    <img class="img2" src="https://store-images.s-microsoft.com/image/apps.59413.69545190943188987.bad7c420-51af-4579-8383-72696799c908.4c6a4319-7fad-41d0-af60-86a68930416a?q=90&w=480&h=270" alt="">
+    <img class="img3" src="https://store-images.s-microsoft.com/image/apps.59413.69545190943188987.bad7c420-51af-4579-8383-72696799c908.4c6a4319-7fad-41d0-af60-86a68930416a?q=90&w=480&h=270" alt="">
+    <div class="linear"><h1> linear gradient</h1></div>
+    <div class="radial"><h1>radial gradient</h1></div>
+    <div class="conic"><h1>conic gradient</h1></div>
+    <div class="conic2"></div>
+    
+</body>
+</html>

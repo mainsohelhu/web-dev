@@ -1,0 +1,13 @@
+#container{
+    width: 70px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    align-content: stretch;
+}
+#container div{
+    height: 70px;
+    width: 70px;
+}

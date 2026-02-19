@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin: 20px;
+    background-color: aquamarine;
+}
+.scale{
+    transform: scale(1.5);
+}
+.skewx{
+    transform: skewX(20deg);
+}
+.skewy{
+    transform: skewY(20deg)
+}
+.translate{
+    transform: translate(50px,20px);
+}
+.rotate{
+    transform: rotate(45deg);
+}
+.rotatex{
+    transform: perspective(200px) rotatex(45deg);
+}
+.rotatey{
+    transform: perspective(200px) rotatey(45deg);
+}
+.rotatexy{
+    transform: perspective(200px) rotatex(45deg) rotatey(45deg);
+}
+
+    </style>
+</head>
+<body>
+    <div class="box scale"></div>
+    <div class="box skewx"></div>
+    <div class="box skewy"></div>
+    <div class="box translate"></div>
+    <div class="box rotate"></div>
+    <div class="box rotatex"></div>
+    <div class="box rotatey"></div>
+    <div class="box rotatexy"></div>
+
+
+</body>
+</html>

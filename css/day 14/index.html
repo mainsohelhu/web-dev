@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            position: static;
+            border: 3px solid;
+        } */
+        /* div{
+            width: 100px;
+            height: 200px;
+            border: 2px solid green;
+            position: relative;
+            top: 10px;
+            left: 10px;
+         } */
+        .relative {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid green;
+        }
+
+        .absolute {
+            width: 200px;
+            height: 100px;
+            border: 3px solid red;
+            position: absolute;
+            top: 80px;
+            right: 0;
+        }
+        .div2{
+            width: 200px;
+            height: 100px;
+            border: 3px solid blue;
+            position: absolute;
+            top: 80px;
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h2>usin position static</h2>
+    <p>an element will position static is alays position acording to the normal flow of the page</p>
+    <div>this element has position static</div> -->
+    <!-- <h2>Using position relative</h2>
+    <p>an element will position relative , is position relative to its normal position</p>
+    <div>this div element has position relative</div>
+     -->
+    <h2>using position absolute.</h2>
+    <p>an element with position absolute is position relative to the nearest anccestor</p>
+    <div class="relative">this div has position relative <div class="absolute">this dis have position absolute</div>
+    <div class="div2">i am a another div</div>
+    </div>
+</body>
+
+</html>

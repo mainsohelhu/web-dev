@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            background-color:red;
+        }
+        #box{
+            width: 250px;
+            height: 250px;
+            /* background-color: blue; */
+        }
+    </style>
+</head>
+<body>
+    <img src="Gemini_Generated_Image_4yq5054yq5054yq5.png" alt="" width="250px" id="img">
+    <div id="box"></div>
+    <button id="btn">click</button>
+    <script>
+        let image = document.getElementById("img")
+        image.addEventListener("load", function(){
+            console.log("image loaded succssesfully!")
+        })
+        image.addEventListener("click", ()=>{
+            image.remove()
+        })
+        // window.addEventListener("load", function(){
+        //     document.body.innerHTML= `
+        //     <h2>wellcome to my page</h2>
+        //     `
+        // })
+        window.addEventListener("load", function(){
+            alert("page full loaded !")
+        })
+        window.addEventListener("load", function(){
+            document.body.style.backgroundColor = "lightyellow"
+        })
+        let div = document.getElementById("box")
+        div.addEventListener("click", function(){
+            div.classList.toggle("red")
+        } )
+        let button = document.getElementById("btn")
+        let handleClick = (event)=> {
+            console.log("event.type:", event.type);
+            console.log("event.target:", Event.target);
+        }
+        button.addEventListener("click", handleClick)
+    </script>
+</body>
+</html>

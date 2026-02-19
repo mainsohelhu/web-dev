@@ -1,0 +1,31 @@
+#main{
+height: 1000px;
+width: 400px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+align-content: space-around;
+border: 2px solid gray;
+}
+.box{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    order: 2;
+    flex-grow: 1;
+}
+.box2{
+    order: 5;
+    flex-grow: 5;
+}
+.box7{
+    flex-grow: 2;
+}

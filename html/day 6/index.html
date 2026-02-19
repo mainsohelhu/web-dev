@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <form action="submit" method="post">
+      <header>
+         <h1>Travel reservation form</h1>
+         <h3>*denotes mandatory</h3>
+      </header>
+      <label for="name">Full name*</label><br>
+      <input type="text" placeholder="First name Last name" required><br>
+      <label for="email">Email address*</label><br>
+      <input type="email"><br>
+      <label for="pakage">Select tour pakage*</label><br>
+      <select name="city" id="citys">
+         <option value="">Raipur</option>
+         <option value="">Durg</option>
+         <option value="">Mahasamund</option>
+      </select><br>
+      <label for="arrivel">Arrivel date*</label><br>
+      <input type="date"><br>
+      <label for="guestNo">Number of person*</label><br>
+      <input type="number" placeholder="UNKNOWN TYPE"><br>
+      <label for="checkList">What would you want to avail*</label><br>
+      Boarding<input type="checkbox"><br>
+      Fooding<input type="checkbox"><br>
+      Sight seeing<input type="checkbox"><br>
+      <label for="coupen">Enter coupen code*</label><br>
+      <input type="text" placeholder="UNKNOWN TYPE"><br>
+      <label for="term">Terms and condition*</label><br>
+      <input type="radio" name="term" id="agree" value="agree"><label for="agree">I agree</label> <input type="radio"
+         name="term" id="disagree" value="disagree"><label for="disagree"> I disagree</label><br>
+      <input type="submit" value="complete reservation">
+   </form>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class-selector {
+            background-color: yellow;
+            color: red;
+            font-size: 24px;
+        }
+
+        #id-selector {
+            background-color: blue;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+        #q {
+            background-color: slateblue;
+            padding: 10px;
+            color: white;
+            border-radius: 10px;
+            margin: 50px;
+            overflow:auto;
+        }
+        .q7{
+            width: 50%;
+            background-color: green;
+            margin: 10vw;
+        }
+        img{
+            border-radius: 10px;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 5px;
+        }
+        .flex{
+            display: flex;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="q">
+        <h1>Question 1</h1>
+        <div class="class-selector">i am a class selector i can be given to more than one element</div>
+        <div id="id-selector">hi i am a id selector i am a uniqe identification of the element i can only be given to
+            one element in web page</div>
+        <p>difrece between id and class secetor is we can give the same class to multiple element as we want but we cant
+            give same id to multiple elements</p>
+    </div>
+    <div id="q">
+        <h1>Question 2</h1>
+        <h2>universal celector</h2>
+        <pre>*{
+        }</pre>
+        <h2>class selector</h2>
+        <pre>.class-name{
+    }
+    </pre>
+        <h2>Id selectors</h2>
+        <pre>#id-name{
+    }
+    </pre>
+        <h2>element selector</h2>
+        <pre>p{
+    }
+    </pre>
+        <h2>child selector</h2>
+        <pre>div > p{
+    }
+    </pre>
+        <h2>decendent seletor</h2>
+        <pre>
+        div p{
+
+        }
+    </pre>
+        <h2>psuedo selector</h2>
+        <pre>
+        a:hover{
+
+        }
+    </pre>
+        <h2>psuedo element selector</h2>
+        <pre>div::first-line{
+    }
+    </pre>
+    <pre>
+    <h2>Combine element selector</h2>
+    table,tr,th{
+        
+    }
+    </pre>
+    </div>
+    <div id="q">
+        <h1>Question 3</h1>
+        <p>universal selector use to targate the body of the html. decendent selector is use to targate the element in
+            side the element.</p>
+        <h3>example</h3>
+        <pre>
+       1 universal selectors
+        *{
+
+        }
+        2 decendent selectors
+        div h1{
+
+        }
+    </pre>
+    </div>
+    <div id="q">
+        <h1>Question 4</h1>
+        <p>i dont understand the Question what it want me to do.</p>
+    </div>
+    <div id="q">
+        <h1>Question 5</h1>
+        <h3>Units explantaion</h3>
+        <p>css size units are use to specify lenght size and distance in style difrece in style sheet.</p>
+        <pre>
+            <h1>Absolute units</h1>
+            pixels = px
+            <h1>Relative units</h1>
+            em,rem,%,vw,vh
+        </pre>
+        <h1>Question 6</h1>
+        <p>converting units</p>
+        <pre>
+            *{
+                font-size: 16px;
+            }
+            p{
+                font-size; 2rem;
+            }
+        </pre>
+        <div class="q7">
+            <h1>Question 7</h1>
+            width:50%;
+            margin:10vw;
+        </div>
+
+    </div>
+    <div id="q">
+        <h1>Question 8</h1>
+        <p>Display property determind how an emlemts display on the web page</p>
+        <pre>
+            display:block; (convert inline elements to block element.)
+            display:inline; (conver block elements to inline element.)
+            display:inline-block (This property makes element display as a inline but we cant apply it's height and width)
+            display:none; ( using none property remove element from the web page)
+            display:flex; (The flex element become's a flex cotainer allowing flexible layout.)
+            display:grid; (The element become's a grid container enabling grid base layout.)
+        </pre>
+    </div>
+    <div id="q">
+        <h1>Question 9</h1>
+        <pre>Ovetflow is use to cover the elements that are over flowing from their container
+            overflow:hidden;
+            overflow:auto;
+            overflow-x:
+            overflow-y:
+        </pre>
+    </div>
+    <div id="q">
+        <h1>Question 10</h1>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgxKk27TqsbpaGsIScrFtA9_38yOBJEmKllg&s" alt="" >
+        <h2>DEAN AMBROSE</h2>
+    </div>
+    <div id="q">
+        <h1>Question 11</h1>
+        <p>Font types</p>
+        <p style="font-family: 'Times New Roman', Times, serif;">times new romern</p>
+        <p style="font-family: sans-serif;">sans-serif</p>
+        <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">seoge ui</p>
+    </div>
+    <div id="q">
+        <h1>Question 12</h1>
+        <h3>Display flex</h3>
+        <div class="flex">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <div id="q">
+        <h1>Question 13</h1>
+        <div class="grid">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        </div>
+    </div>
+</body>
+
+</html>

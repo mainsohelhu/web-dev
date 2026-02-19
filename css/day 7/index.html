@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css units</title>
+    <style>
+        /* ablotule unit */
+        p {
+            font-size: 16px;
+        }
+
+        /* relative unit */
+        /* 1em * parent element */
+        .parent {
+            color: white;
+            font-size: 32px;
+            background-color: blue;
+        }
+
+        .em {
+            font-size: 2em;
+        }
+
+        /* rem* parent element */
+        .parent2 {
+            font-size: 20px;
+            color: yellowgreen;
+            text-overflow: inherit;
+            overflow: hidden;
+        }
+
+        .rem {
+            font-size: 3rem;
+            text-overflow: ellipsis;
+        }
+
+        div {
+            width: 50vw;
+            background-color: red;
+            border: solid;
+            height: 50vh;
+        }
+
+        .parent3 {
+            background-color: aqua;
+        }
+
+        .percent {
+            width: 50%;
+            height: 50%;
+            text-align:center;
+            overflow:hidden;
+            background-color: blueviolet;
+            color: white;
+            border-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- abosolute unit -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div class="parent">
+        hii i am sohel
+        <p class="em">this is a exapmle of em unit</p>
+    </div>
+    <div class="parent2">
+        i am a parent of rem
+        <p class="rem">this is the example of rem unit</p>
+    </div>
+    <div class="parent3">
+        <div class="percent">i ma a example of percent unit</div>
+        hi i am parent 3
+    </div>
+    <div>
+
+    </div>
+</body>
+
+</html>

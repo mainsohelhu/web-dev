@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            /* transform-origin: 50% 50%; */
+            /* animation: spin 2s linear infinite; */
+        }
+        /* @keyframes spin{
+            from{transform: rotate(0deg)}
+            to {transform: rotate(360deg)}
+            
+        } */
+        .container{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .Fangle{
+            background: conic-gradient(from 90deg,red,orange,yellow,green,black);
+        }
+        .repeating{
+            background: conic-gradient(red,orange,red,orange,red,orange,red,orange,red,orange,red,orange,red,orange,red,orange,red,orange,red,orange,red);
+        }
+        .chart{
+            background: conic-gradient(red,orange,yellow,green,black,blue,black);
+        }
+        .pie{
+            background: conic-gradient( from 0deg ,red 90deg ,yellow 90deg 180deg,black 180deg 270deg,blue 270deg 360deg );
+        }
+        img{
+            width: 350px;
+            height: 200px;
+            position: static;
+            position: fixed;
+        }
+        .background{
+            background: conic-gradient(blue,red,green,orange,aqua);
+            width: 380px;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: spin 2s linear infinite;
+
+        }
+        @keyframes spin{
+            from{transform:rotate(0deg)}
+            to{transform: rotate(360de);} 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- <h1>Conic gradient - With a from angle</h1> -->
+    <div class="Fangle a1"></div>
+    <!-- <h1>repeating a conic gradient</h1> -->
+    <div class="repeating a1"></div>
+    <!-- <h1>pie chart</h1> -->
+    <div class="chart a1"></div>
+    <!-- <h1>pie chart</h1> -->
+    <div class="pie a1"></div>
+    </div>
+    <div class="background"><img src="https://dunke.nl/wp-content/uploads/2022/03/MGS1-front-1.jpg" alt=""></div>
+
+    
+</body>
+</html>

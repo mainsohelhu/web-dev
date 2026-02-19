@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #mf{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            gap: 10px;
+            background-color: silver;
+            max-width: 250px;
+            margin: 0 auto;
+            border-radius: 15px; 
+        }
+        input,textarea{
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+
+        }
+        button{
+            padding: 10px;
+            border-radius: 25px;
+            border: none;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form action="" id="mf">
+        <input type="text" placeholder="Enter name" required>
+        <input type="text" placeholder="Age" required>
+        <input type="text" placeholder="Mobile no.">
+        <textarea name="add" id="" placeholder="Address" required></textarea>
+        <div>
+        <input type="radio" name="gender"><label for="male">Male</label><input type="radio" name="gender"><label for="female">Female</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        let form = document.getElementById("mf")
+        form.addEventListener("submit", (event)=>{
+            // event.preventDefault()
+            alert("Form submitted")
+        })
+        
+    </script>
+</body>
+</html>

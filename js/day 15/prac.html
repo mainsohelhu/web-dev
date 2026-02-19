@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .add {
+            padding: 10px;
+            width: 100px;
+        }
+
+        input {
+            width: 350px;
+            padding: 10px;
+        }
+
+        li{
+            padding: 10px;
+            border: 1px solid;
+            display: flex;
+            gap: 2vh;
+            align-items: center;
+        }
+        span{
+            width: 300px;
+            overflow-x:auto;
+        }
+        .remove{
+            padding: 10px;
+            background-color: red;
+            color: white;
+        }
+        .done{
+            background-color: greenyellow;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="player">
+        <h3>Add players to the team</h3>
+        <div>
+            <input type="text" id="name">
+            <button onclick="addname()" class="add">Add</button>
+        </div>
+    </div>
+    <div id="names"></div>
+    <script>
+        let names = document.getElementById("names")
+        let ul = document.createElement("ul");
+        names.appendChild(ul)
+        document.getElementById("name").addEventListener("keydown", function (e) {
+            if (e.key === "Enter") {
+                addname()
+            }
+
+        })
+        function addname() {
+            let name = document.getElementById("name").value
+            if (name === "") {
+                alert("please Enter name")
+                return
+            }
+            let li = document.createElement("li")
+            let text = document.createElement("span")
+            let remove = document.createElement("button")
+            let complete = document.createElement("button")
+            text.textContent = "wellcome to team " + name
+            remove.innerHTML = "X";
+            remove.className = "remove"
+            complete.innerHTML = "0"
+            complete.className = "done"
+            remove.addEventListener("click", () => {
+                li.remove()
+            })
+            complete.addEventListener("click", () => {
+                li.style.cssText = `
+                color: green;
+                `
+            })
+            li.appendChild(text)
+            li.appendChild(remove)
+            li.appendChild(complete)
+            ul.appendChild(li)
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* globle variable */
+            --globle-color:#000000;
+        }
+        body{
+            /* use the globle variable */
+            color: var(--globle-color);
+            background-color: #f0f0f0;
+        }
+        h1{
+            /* Local variable that overrite the globle one */
+            --white-text:#ffffff;
+            color: var(--white-text);
+            background-color: #333333;
+            padding: 10px;
+        }
+        p{
+            /* use the local variable */
+            --paragraph-color: #ff5733;
+            color: var(--paragraph-color);
+        }
+    </style>
+</head>
+<body>
+    <h1>heading</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, atque!</p>
+</body>
+</html>

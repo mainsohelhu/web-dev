@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .form {
+            border: solid green;
+            box-sizing: border-box;
+            margin: 150px;
+        }
+
+        #name {
+            margin: 10px;
+        }
+
+        #mail {
+            margin: 10px;
+        }
+
+        #age {
+            margin: 10px;
+        }
+        .comment{
+            margin: 10px;
+        }
+        .dropdown{
+            margin: 10px;
+        }
+        .checkbox{
+            margin: 10px;
+        }
+        .comment{
+            margin: 10px;
+        }
+        .comment input{
+            margin: 10px;
+            padding: 10px;
+            width:250px;
+        }
+        .submitButton{
+            text-align: center;
+            background-color: green;
+            margin: 10px;            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <div id="name">
+            <lable>Name</lable><br>
+            <input type="text" placeholder="Enter your name"><br>
+        </div>
+        <div id="mail">
+            <lable>Email</lable><br>
+            <input type="email" placeholder="Enter your email"><br>
+        </div>
+        <div id="age">
+            <lable>Age</lable><br>
+            <input type="text" placeholder="Enter your age"><br>
+        </div>
+        <div class="dropdown">
+            <label for="freind">Witch option best discribe you</label><br>
+            <select name="freind" id="freind">
+                <option>student</option>
+                <option>sohel</option>
+            </select>
+        </div>
+        <div class="radio">
+            <label for="radio">Would you recomend GeeksforGeeks to a friend</label><br>
+            <input type="radio" name="celect">Yes<br>
+            <input type="radio" name="celect">No <br>
+            <input type="radio" name="celect">Maybe
+        </div>
+        <div class="checkbox">
+            <label for="checkbox">Language and Frameworks known</label><br>
+            <input type="checkbox">C <br>
+            <input type="checkbox">C++ <br>
+            <input type="checkbox">C# <br>
+            <input type="checkbox">Java <br>
+            <input type="checkbox">Python <br>
+            <input type="checkbox">JavaSript <br>
+            <input type="checkbox">React <br>
+            <input type="checkbox">Angular <br>
+            <input type="checkbox">Django <br>
+            <input type="checkbox">Spring<br>
+        </div>
+        <div class="comment">
+            <label for="comment">Any comments or suggetions</label><br>
+            <input type="text" placeholder="Enter your comments here" >
+        </div>
+        <div class="submitButton">
+        <input type="submit" value="submit" style="border: none; background-color: green;">
+        </div>
+    </div>
+</body>
+
+</html>

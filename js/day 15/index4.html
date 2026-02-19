@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    #box{
+        width: 200px;
+        height: 100px;
+        font-size: 18px;
+        background-color: lightblue;
+        text-align: center;
+        line-height: 100px;
+
+    }
+  </style>
+</head>
+<body>
+    <p id="box">hover me</p>
+    <input type="text" id="bd" placeholder="type something">
+    <input type="text" id="inbox" placeholder="type something">
+    <p id="output"></p>
+    <form action="" id="myForm">
+        <input type="text" placeholder="Enter name" required>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        let box = document.getElementById('box')
+        box.addEventListener("mouseover", () =>{
+            box.style.backgroundColor = "cornsilk"
+            box.innerText = "mouse out !"
+        })
+        let input = document.getElementById("bd")
+        input.addEventListener("keydown", function (event) {
+            console.log("key pressed",event.key);
+            
+        })
+        let inbox = document.getElementById("inbox")
+        let output = document.getElementById("output")
+        inbox.addEventListener("keyup" , function () {
+            output.innerHTML = inbox.value
+        })
+        let form = document.getElementById("myForm")
+        form.addEventListener("submit", (event) =>{
+            event.preventDefault()
+            alert("form submited succsessfully")
+        })
+    </script>
+</body>
+</html>

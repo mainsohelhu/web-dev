@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche Website</title>
+  <style>
+    body {
+      background-image: url("porsche-911-gt3-r-3840x2160-23672.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ✅ Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin: 0;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.6); /* transparent background */
+    }
+
+    nav li {
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    nav li:hover {
+      color: red;
+    }
+
+    /* ✅ Heading */
+    h1 {
+      font-size: 8vw; /* responsive text */
+      color: white;
+      text-align: right;
+      margin: 80px 5% 0 0;
+    }
+
+    /* ✅ Description Box */
+    .description {
+      max-width: 500px;
+      background: rgba(0, 0, 0, 0.5); /* makes text more readable */
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto 40px auto; /* center for small screens */
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* ✅ Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 40px 0 20px 0;
+      }
+
+      .description {
+        width: 90%;
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ✅ Navigation -->
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Contact</li>
+      <li>About</li>
+      <li>Buy</li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Heading -->
+  <h1>PORSCHE</h1>
+
+  <!-- ✅ Paragraph -->
+  <div class="description">
+    <p>
+      Get this Cool Porsche 911 GT3 R background in 6000x3374 5K resolution from Cars category.
+      You can also download it for computer, mobile phones, iPhone and iPad from given resolutions.
+    </p>
+  </div>
+</body>
+
+</html>

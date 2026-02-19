@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .q{
+            width: 80vw;
+            margin: 10px auto;
+            padding: 10px;
+            box-shadow: 1px 10px 10px;
+        }
+        .div{
+           width: 100%;
+           height: 100px;
+           background-color: slateblue;
+           color: white;
+        }
+        .posstatic{
+            position: static;
+            top: 50px;
+        }
+        .posrelativ{
+            position: relative;
+            top: 25px;
+        }
+        .posabsolute{
+            position: absolute;
+            top: 100px;
+            left: 30px;
+        }
+        .headersticky{
+            position: sticky;
+            top: 0;
+        }
+        .nav{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 5;
+        }
+        .nav ul{
+            display: flex;
+            gap: 20vw;
+            justify-content: center;
+            list-style: none;
+        }
+        .smalldiv{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            position: absolute;
+        }
+        .box{
+            width: 100%;
+            height: 100px;
+        }
+        .red{
+            background-color: red;
+            position: absolute;
+            left: 20px;
+            top: 0;
+            z-index: 2;
+        }
+        .blue{
+            background-color: blue;
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            z-index: 1;
+        }
+        .green{
+            background-color: green;
+            position: absolute;
+            top: 40px;
+            left: 60px;
+        }
+        .chatbutton{
+            position: fixed;
+            top: 60vw;
+            right: 20px;
+            z-index: 4;
+        }
+        .chatbutton > button{
+            border: none;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 50px 50px 0px;
+        }
+        .sidebar{
+            width: 10vw;
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 200px;
+            background-color: aqua;
+            z-index: 0;
+            padding: 15px;
+        }
+        .galary{
+            width: 100px;
+            height: 150px;
+            position: relative;
+        }
+        .caption{
+            position: absolute;
+            top: 0px;
+            left: 16px;
+        }
+        .galimg{
+            position:absolute;
+            top: 40px;
+            
+        }
+        .imggalary{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cardimg{
+            width: 100%;
+            border-radius: 15px;
+            height: 100px;
+        }
+        .card{
+            width: 40vw;
+            height: 300px;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 1px 10px 10px;
+            position: absolute;
+            max-width: 250px;
+        }
+        .cardholder{
+            position: relative;
+            height: 400px;
+        }
+        .card1{
+            z-index: 3;
+            background-color: slateblue;
+        }
+        .card2{
+            left: 40px;
+            background-color: pink;
+            z-index: 2;
+        }
+        .card3{
+            left: 80px;
+            background-color: aqua;
+            z-index: 1;
+        }
+        .backtotop{
+            border: none;
+            padding: 20px;
+            background-color: red;
+            border-radius: 50px;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="q" id="backtotop">
+        <h1>Quetion46</h1>
+        <div class="posstatic div">stacic</div>
+    </div>
+    <div class="q">
+        <h1>Question 47</h1>
+        <div class="posrelativ div"> relative Question 47</div>
+    </div>
+    <div class="q" style="position: relative;">
+        <h1>Question 48</h1>
+        <div class="posabsolute div"> i am a postion absolute div from question 48</div>
+        <div class="div" style="background-color: red;"></div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+        <div>
+            <h1>hi</h1>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 49</h1>
+        <div class="headersticky div"><h1>sticky header</h1></div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+        <div>
+            <h1>hii</h1>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 50</h1>
+        <div class="nav div"><ul>
+            <li>Home</li>
+            <li>Product</li>
+            <li>About</li>
+        </ul>
+        </div>
+    </div>
+    </div>
+    <div class="q">
+        <h1>Question 51</h1>
+        <div style="position: relative;">
+            <div class="smalldiv"></div>
+        </div>
+    </div>
+    <div class="q" style="position: relative;">
+        <h1>Question 52</h1>
+        <div class="red box">z-index 2</div>
+        <div class="blue box">z-index 1</div>
+        <div class="green box"></div>
+    </div>
+    <div class="q">
+        <h1>Question 53</h1>
+        <div><h1></h1></div>
+    </div>
+    <div class="q">
+        <h1>Question 54</h1>
+        <span><img src="" alt="">Text</span>
+    </div>
+    <div class="q">
+        <h1>Question 55</h1>
+        <div class="chatbutton"><button>chat</button></div>
+    </div>
+    <div class="q scroll" >
+        <h1>Question 56</h1>
+        <div class="cont">
+        <div class="sidebar">Sidebar</div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Quetion 57</h1>
+        <div class="imggalary">
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+            <div class="galary"><p class="caption">Caption</p>
+            <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" width="100vw" height="100vh" class="galimg"></div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 70</h1>
+        <div class="cardholder">
+            <div class="card1 card">
+                <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" class="cardimg">
+                 <h1>this is card</h1>
+                 <p>i am a card</p>
+            </div>
+            <div class="card2 card">
+                <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" class="cardimg">
+                 <h1>this is card</h1>
+                 <p>i am a card</p>
+            </div>
+            <div class="card3 card">
+                <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=" alt="" class="cardimg">
+                 <h1>this is card</h1>
+                 <p>i am a card</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 60</h1>
+        <button class="backtotop"><a href="#backtotop">back to top</a></button>
+    </div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+    <div class="q"></div>
+</body>
+</html>

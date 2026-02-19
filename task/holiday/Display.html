@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .q {
+            width: 80vw;
+            margin: 15px auto;
+            box-shadow: 1px 10px 10px;
+            padding: 20px;
+        }
+
+        .inlinePara>p {
+            display: inline;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .nav {
+            width: 100%;
+        }
+
+        .nav ul {
+            margin: auto;
+            padding: 10px;
+            width: 80%;
+            flex-wrap: wrap;
+            gap: 30px;
+            list-style: none;
+            justify-content: center;
+            background-color: aqua;
+        }
+        .nav ul li{
+            display: inline-block;
+            margin: 0 20px;
+
+        }
+
+        .nav ul li:hover {
+            color: white;
+        }
+
+        .inlineImg {
+            width: 60vw;
+            display: inline;
+        }
+
+        .spanBlock {
+            display: block;
+            background: salmon;
+        }
+
+        .difbox {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .box1 {
+            width: 10vw;
+            height: 200px;
+            background-color: slateblue;
+            display: inline-block;
+        }
+
+        .box2 {
+            width: 20vw;
+            height: 300px;
+            background-color: gold;
+            display: inline-block;
+        }
+
+        .box3 {
+            width: 30vw;
+            height: 400px;
+            background-color: cadetblue;
+            display: inline-block;
+        }
+
+        .disnone {
+            width: 150px;
+            height: 200px;
+            background-color: aqua;
+            margin: auto;
+            display: none;
+        }
+
+        .invisible {
+            width: 150px;
+            height: 200px;
+            margin: auto;
+            background-color: aqua;
+            visibility: hidden;
+        }
+
+        .table {
+            display: table;
+            margin: auto;
+            width: 80vw;
+        }
+
+        .row {
+            display: table-row;
+        }
+
+        .cell {
+            display: table-cell;
+            padding: 10px;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        .flex {
+            display: flex;
+            width: 100%;
+        }
+
+        .col1 {
+            background-color: red;
+            width: 50%;
+            height: 150px;
+        }
+
+        .col2 {
+            background-color: blue;
+            width: 50%;
+            height: 150px;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .grid{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin: 15px;
+        }
+        .inline{
+            display: inline;
+            width: 500px;
+            height: 500px;
+            background-color: palevioletred;
+        }
+        .blockButton{
+            display: block;
+        }
+        .spanBlock13{
+            display: inline-block;
+            background-color: pink;
+            padding: 10px;
+            margin: 5px;
+        }
+        .dropdown ul{
+            display: flex;
+            gap: 10%;
+            list-style: none;
+        }
+        .dropdown ul li ul{
+            display: none;
+        }
+        .dropdown ul li:hover ul{
+            display: block;
+        }
+        .listitem{
+            display: list-item;
+        }
+        .wraper{
+            display: contents;
+            background-color: aqua;
+        }
+        .spacebeetween{
+            display: flex;
+            justify-content: space-between;
+        }
+        .space{
+            width: 50px;
+            height: 50px;
+            background-color: gold;
+        }
+        .givemar{
+            background-color: antiquewhite;
+            margin-top: 10px;
+            display: inline;
+        }
+        .inlineblockdiv{
+            display: inline-block;
+            height: 50px;
+            background-color: sandybrown;
+        }
+        .blockdiv{
+            background-color: aquamarine;
+            display: block;
+        }
+        .hidden{
+            font-size: 50px;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="q">
+        <h1>Question 1</h1>
+        <div class="inlinePara">
+            <p>i am a paragraph one</p>
+            <p>i am a paragraph two</p>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 2</h1>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>Main</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 3</h1>
+        <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2021/12/One-Above-All-Marvels-most-powerful-character.png"
+            alt="" class="inlineImg">img tags are alredy inline
+    </div>
+    <div class="q">
+        <h1>Question 4</h1>
+        <span class="spanBlock">This is span with block property</span>
+        <span>This is normal span</span>
+    </div>
+    <div class="q">
+        <h1>Question 5</h1>
+        <div class="difbox">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 6</h1>
+        <div class="disnone"></div>
+    </div>
+    <div class="q">
+        <h1>Question 7</h1>
+        <div class="invisible"></div>
+    </div>
+    <div class="q">
+        <h1>Question 8</h1>
+        <div class="table">
+            <div class="row">
+                <div class="cell">Name</div>
+                <div class="cell">Age</div>
+                <div class="cell">City</div>
+                <div class="cell">Number</div>
+            </div>
+            <div class="row">
+                <div class="cell">Sohel khan</div>
+                <div class="cell">24</div>
+                <div class="cell">Raipur</div>
+                <div class="cell">9100000000</div>
+            </div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 9</h1>
+        <div class="flex">
+            <div class="col1">i am colmun 1</div>
+            <div class="col2">i am colmun 2</div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 10</h1>
+        <div class="gridcontainer">
+            <div class="grid">1</div>
+            <div class="grid">2</div>
+            <div class="grid">3</div>
+            <div class="grid">4</div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 11</h1>
+        <div class="inline"> width height dont apply in inline elements</div>
+    </div>
+    <div class="q">
+        <h1>Question 12</h1>
+        <button class="blockButton">click</button>button is taking full width because of display block property
+    </div>
+    <div class="q">
+        <h1>Question 13</h1>
+        <span class="spanBlock13">i am span</span><span class="spanBlock13">i am span</span><span class="spanBlock13">i am span</span><span class="spanBlock13">i am span</span><span class="spanBlock13">i am span</span>
+    </div>
+    <div class="q">
+        <h1>Question 14</h1>
+        <div class="dropdown">
+            <ul>
+                <li>Home
+                    <ul>
+                        <li>a</li>
+                        <li>b</li>
+                        <li>c</li>
+                    </ul>
+                </li>
+                <li>About
+                    <ul>
+                        <li>this page</li>
+                        <li>next page</li>
+                        <li>preveus page</li>
+                    </ul>
+                </li>
+                <li>Contact
+                    <ul>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Qeustion 15</h1>
+        <div class="listitem">
+            <h1>heading 1</h1>
+            <h2>heading 2</h2>
+            <h3>heading 3</h3>
+            <h4>heading 4</h4>
+            <h5>heading 5</h5>
+            <h6>heading 6</h6>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 16</h1>
+        <div class="wraper"><h1>hi</h1><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid deleniti voluptatem corporis modi quia, perferendis distinctio ullam aut rerum a natus cum beatae ipsam, quo, commodi provident nulla ratione veritatis non ipsum illum ad. Impedit, inventore. Debitis, autem assumenda. Maiores laborum nam deleniti libero accusamus.</p></div>
+    </div>
+    <div class="q">
+        <h1>Question 17</h1>
+        <div class="spacebeetween">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+        </div>
+    </div>
+    <div class="q">
+        <h1>Question 18</h1>
+        <p class="givemar">Try to give margin now</p>
+    </div>
+    <div class="q">
+        <h1>Quesion 19</h1>
+        <div class="blockdiv">i am a blox div</div>
+        <div class="inlineblockdiv">i am a inline block div</div>
+    </div>
+    <div class="q">
+        <h1>Question 20</h1>
+        <div class="hidden" style="visibility: visible;">i am visible now</div>
+    </div>
+</body>
+
+</html>
