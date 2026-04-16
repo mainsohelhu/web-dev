@@ -1,0 +1,46 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #333;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.cards{
+    display: flex;
+    padding: 10px 20px;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.cad{
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 1px 2px 10px gainsboro;
+}
+.footer{
+    background: black;
+}
+
+.footerHead{
+    font-size: 24px;
+    color: white;
+}
+.footerPara{
+    color: white;
+    
+}

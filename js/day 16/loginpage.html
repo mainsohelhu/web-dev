@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        .login {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+    <h1>Login</h1>
+    <form onsubmit="event.preventDefault(); login();">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        
+        <button type="submit">Login</button>
+    </form>
+    </div>
+    <script>
+        let users = [
+            {email:"sohel@gmail.com", password : "1234"}
+        ]
+        function login() {
+            let mail = document.getElementById("email").value
+            let password = document.getElementById("password").value
+
+            let user = users.find(u => u.email.toLowerCase() === mail.toLowerCase())
+
+            if (!user) {
+                alert("user not found")
+                return
+            }
+            
+            if (password === user.password) {
+                alert("login successful")
+                window.location.href = "counter.html";
+            }else{
+                alert("wrong pasword")
+            }
+
+        }
+    </script>
+</body>
+</html>

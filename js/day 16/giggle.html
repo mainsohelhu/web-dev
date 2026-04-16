@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Wrapper hides overflow */
+    .wrapper {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    /* Carousel container */
+    .coursel {
+      display: flex;
+      width: 100%; /* 3 images */
+      height: 100%;
+      animation: slide 9s infinite;
+    }
+
+    /* Each slide */
+    .coursel-item {
+      flex: 0 0 100%;
+    }
+
+    /* Image styling */
+    .coursel-item img {
+      width: 100%;
+      height: 100%;
+      /* object-fit: cover; */
+    }
+
+    /* Animation */
+    @keyframes slide {
+      0%, 20%   { transform: translateX(0); }
+      25%, 45%  { transform: translateX(-100%); }
+      50%, 70%  { transform: translateX(-200%); }
+      75%, 100% { transform: translateX(0); }
+    }
+    .filter {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="filter">
+    <div class="coursel">
+
+      <div class="coursel-item">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg">
+      </div>
+
+      <div class="coursel-item">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-cloudy-background-beautiful-natural-streaks-of-sky-and-clouds-red-image_15684333.jpg">
+      </div>
+
+      <div class="coursel-item">
+        <img src="https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=">
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+</html>
